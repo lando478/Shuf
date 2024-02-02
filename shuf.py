@@ -7,10 +7,6 @@ import argparse
 import string
 import sys
 
-#small restrictions because not mentioned in spec
-# my program does not accept arguments prior to -e or -i flag. 
-# my program does not redirect to to a file such as the original shuf command, this was also not mentioed in spec!
-# my program had small issue when running loop or user input, it insers the escape charcter ^D or ^C. This was not mentioed to clean up so i figured it is okay!
 def readFile(fileName, count, repeat=False):
       try:
             with open(fileName, 'r') as f:
